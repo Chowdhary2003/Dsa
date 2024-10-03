@@ -1,7 +1,8 @@
 Breakdown,
 dry run,
 walkthrough,
-visual representation
+visual representation,
+illustartion
 
 ##  Add Two Numbers
 ```cpp
