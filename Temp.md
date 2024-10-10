@@ -405,7 +405,7 @@ Node *oddEvenLinkedList(Node *head) {
 
 ## Stack implementation using array
 
-```c
+```cpp
 #include <iostream>
 #include <vector>
 
@@ -456,7 +456,7 @@ public:
 
 ## Stack using Linked list
 
-```c
+```cpp
 class Stack {
 private:
     Node* top;  // Pointer to the top node
@@ -510,7 +510,7 @@ public:
 
 ## Queue using linked list
 
-```c
+```cpp
 class Queue {
 private:
     Node* front_node;
@@ -573,7 +573,7 @@ public:
 
 ## Queue using array
 
-```c
+```cpp
 int frontTrack, rear, currentSize;
     int capacity;
     vector<int> queue;
@@ -624,3 +624,116 @@ int frontTrack, rear, currentSize;
 
 
 
+## Queue using 2 stacks
+
+```cpp
+1st
+
+stack<int> input, output;
+
+void push(int x) {
+    input.push(x);
+}
+
+int pop() {
+    peek();
+    int val = output.top();
+    output.pop();
+    return val;
+}
+
+int peek() {
+    if (output.empty()) {
+        while (!input.empty()) {
+            output.push(input.top());
+            input.pop();
+        }
+    }
+    return output.top();
+}
+
+bool empty() {
+    return input.empty() && output.empty();
+}
+
+```
+```
+2nd
+
+class Queue {
+    stack<int> stk1, stk2;
+
+public:
+    bool enqueue(int x) {
+        stk1.push(x);
+        return true;
+    }
+
+    int dequeue() {
+        if (stk2.empty()) {
+            while (!stk1.empty()) {
+                stk2.push(stk1.top());
+                stk1.pop();
+            }
+        }
+        if (stk2.empty()) return -1;
+        int val = stk2.top();
+        stk2.pop();
+        return val;
+    }
+};
+```
+
+## Stack using 2 queues
+
+```cpp
+class Stack {
+private:
+    std::queue<int> q1, q2;
+
+public:
+    // Constructor
+    Stack() {}
+
+    // Push function
+    void push(int data) {
+        // Push data into q2
+        q2.push(data);
+        // Transfer all elements from q1 to q2
+        while (!q1.empty()) {
+            q2.push(q1.front());
+            q1.pop();
+        }
+        // Swap the names of q1 and q2
+        std::swap(q1, q2);
+    }
+
+    // Pop function
+    int pop() {
+        if (q1.empty()) {
+            return -1;
+        }
+        int topElement = q1.front();
+        q1.pop();
+        return topElement;
+    }
+
+    // Top function
+    int top() {
+        if (q1.empty()) {
+            return -1;
+        }
+        return q1.front();
+    }
+
+    // Size function
+    int size() {
+        return q1.size();
+    }
+
+    // isEmpty function
+    bool isEmpty() {
+        return q1.empty();
+    }
+};
+```
