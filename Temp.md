@@ -400,3 +400,227 @@ Node *oddEvenLinkedList(Node *head) {
     return head;
 }
 ```
+
+
+
+## Stack implementation using array
+
+```c
+#include <iostream>
+#include <vector>
+
+class Stack {
+private:
+    std::vector<int> stack;  // Vector to hold stack elements
+    int maxSize;             // Maximum size of the stack
+
+public:
+    Stack(int size) : maxSize(size) {}
+
+    void push(int num) {
+        if (!isFull()) {
+            stack.push_back(num);
+        } else {
+            std::cout << "Stack is full, cannot push " << num << std::endl;
+        }
+    }
+
+    void pop() {
+        if (!isEmpty()) {
+            std::cout << stack.back() << std::endl;
+            stack.pop_back();
+        } else {
+            std::cout << -1 << std::endl;
+        }
+    }
+
+    void top() {
+        if (!isEmpty()) {
+            std::cout << stack.back() << std::endl;
+        } else {
+            std::cout << -1 << std::endl;
+        }
+    }
+
+    bool isEmpty() {
+        return stack.empty();
+    }
+
+    bool isFull() {
+        return stack.size() == maxSize;
+    }
+};
+```
+
+
+
+## Stack using Linked list
+
+```c
+class Stack {
+private:
+    Node* top;  // Pointer to the top node
+    int size;   // Size of the stack
+
+public:
+    Stack() : top(nullptr), size(0) {}
+
+    int getSize() {
+        return size;
+    }
+
+    bool isEmpty() {
+        return size == 0;
+    }
+
+    void push(int value) {
+        Node* newNode = new Node(value); // Create a new node
+        newNode->next = top;             // Link the new node to the current top
+        top = newNode;                   // Update the top to the new node
+        size++;                           // Increment the size
+    }
+
+    void pop() {
+        if (isEmpty()) {
+            return;  // Do nothing if the stack is empty
+        }
+        Node* temp = top;  // Temporary pointer to the top node
+        top = top->next;   // Move the top pointer to the next node
+        delete temp;       // Free the memory of the old top node
+        size--;            // Decrement the size
+    }
+
+    int getTop() {
+        if (isEmpty()) {
+            return -1;  // Return -1 if the stack is empty
+        }
+        return top->value;  // Return the value of the top node
+    }
+
+    ~Stack() {
+        while (!isEmpty()) {
+            pop();  // Clean up the stack on destruction
+        }
+    }
+};
+```
+
+
+
+
+## Queue using linked list
+
+```c
+class Queue {
+private:
+    Node* front_node;
+    Node* rear_node;
+
+public:
+    Queue() : front_node(nullptr), rear_node(nullptr) {}
+
+    // Enqueue function to add an element to the rear of the queue
+    void enqueue(int data) {
+        Node* new_node = new Node(data);
+        if (rear_node == nullptr) {
+            // The queue is empty
+            front_node = rear_node = new_node;
+        } else {
+            // The queue is not empty
+            rear_node->next = new_node;
+            rear_node = new_node;
+        }
+    }
+
+    // Dequeue function to remove an element from the front of the queue
+    int dequeue() {
+        if (front_node == nullptr) {
+            return -1; // Queue is empty
+        }
+        int removed_data = front_node->data;
+        Node* temp = front_node;
+        front_node = front_node->next;
+        if (front_node == nullptr) {
+            // If the queue is now empty, update rear_node
+            rear_node = nullptr;
+        }
+        delete temp;
+        return removed_data;
+    }
+
+    // Front function to get the front element without removing it
+    int front() {
+        if (front_node == nullptr) {
+            return -1; // Queue is empty
+        }
+        return front_node->data;
+    }
+
+    // isEmpty function to check if the queue is empty
+    bool isEmpty() {
+        return front_node == nullptr;
+    }
+
+    // Destructor to free up memory
+    ~Queue() {
+        while (!isEmpty()) {
+            dequeue();
+        }
+    }
+};
+```
+
+
+## Queue using array
+
+```c
+int frontTrack, rear, currentSize;
+    int capacity;
+    vector<int> queue;
+	Queue (int capacity) {
+		this->capacity = capacity;
+		frontTrack = this->currentSize = 0;
+		rear = capacity - 1;
+		queue.resize(this->capacity);
+	}
+
+	bool isEmpty() {
+		return currentSize == 0;
+	}
+	
+	int size() {
+		return currentSize;
+	}
+	
+	int front() {
+		if(isEmpty()) {
+			return -1;
+		}
+		return this->queue[this->frontTrack];
+	}
+	
+	int back() {
+		if (isEmpty()) {
+            return -1;
+		}
+        return this->queue[this->rear];
+	}
+	
+	void push(int element) {
+		if (currentSize == capacity) {
+            return;
+		}
+        this->rear = (this->rear + 1) % this->capacity;
+        this->queue[this->rear] = element;
+        this->currentSize = (this->currentSize) + 1;
+	}
+	
+	void pop() {
+		this->frontTrack = (this->frontTrack + 1) % this->capacity;
+        this->currentSize = this->currentSize - 1;
+	}
+```
+
+
+
+
