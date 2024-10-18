@@ -9,42 +9,6 @@ overview
 
 
 
-## Insertion Sort in Linked List
-
-```cpp
-ListNode* insertionSortList(ListNode* head) {
-    // If the list is empty or has only one element, it's already sorted.
-    if (!head || !head->next) return head;
-
-    // Create a dummy node to simplify insertion operations.
-    ListNode dummy(0);
-    ListNode* sorted = &dummy; // This will point to the head of the sorted list.
-
-    // Iterate through each node in the original list.
-    while (head) {
-        ListNode* next = head->next; // Temporarily store the next node to process.
-
-        // Find the correct position to insert the current node in the sorted part.
-        ListNode* prev = &dummy; // Start from the dummy node.
-        
-        // Traverse the sorted list to find the insertion point.
-        while (prev->next && prev->next->val < head->val) {
-            prev = prev->next; // Move to the next node in the sorted list.
-        }
-
-        // Insert the current node into the sorted list.
-        head->next = prev->next; // Link the current node to the next node in the sorted list.
-        prev->next = head; // Link the previous node to the current node.
-
-        // Move to the next node in the original list for the next iteration.
-        head = next; 
-    }
-
-    // Return the sorted list, which starts from the next node of the dummy.
-    return dummy.next;
-}
-```
-
 
 
 ##  Delete Kth Node From End
@@ -831,3 +795,120 @@ bool isBalanced(const std::string& S) {
 
 
 
+
+## Diameter
+
+```cpp
+int diameterOfBinaryTree(Node* root) {
+    int diameter = 0;
+    height(root, diameter);
+    return diameter;
+}
+
+int height(Node* node, int& diameter) {
+    if (!node) {
+        return 0;
+    }
+    int lh = height(node->left, diameter);
+    int rh = height(node->right, diameter);
+    diameter = max(diameter, lh + rh);
+    return 1 + max(lh, rh);
+}
+```
+
+
+
+## LCA
+
+```cpp
+TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    if (root == NULL || root == p || root == q) {
+        return root;
+    }
+    TreeNode* left = lowestCommonAncestor(root->left, p, q);
+    TreeNode* right = lowestCommonAncestor(root->right, p, q);
+    if (left == NULL) {
+        return right;
+    } else if (right == NULL) {
+        return left;
+    } else {
+        return root;
+    }
+}
+```
+
+
+## Level Order Traversal
+
+```cpp
+vector<vector<int>> levelOrder(TreeNode* root) {
+    vector<vector<int>> levels;  
+    if (!root) return levels;  
+
+    queue<TreeNode*> nodesQueue;
+    nodesQueue.push(root);
+
+    while (!nodesQueue.empty()) {
+        int levelSize = nodesQueue.size(); 
+        vector<int> currentLevel;          
+
+        while (levelSize > 0) {
+            TreeNode* currentNode = nodesQueue.front(); 
+            nodesQueue.pop();                           
+
+            currentLevel.push_back(currentNode->val);
+
+            if (currentNode->left) {
+                nodesQueue.push(currentNode->left);
+            }
+            if (currentNode->right) {
+                nodesQueue.push(currentNode->right);
+            }
+
+            levelSize--; 
+        }
+
+        levels.push_back(currentLevel);
+    }
+
+    return levels; 
+}
+```
+
+
+
+
+## Zigzag Traversal
+
+```cpp
+std::vector<std::vector<int>> zigzagLevelOrder(TreeNode* root) {
+    std::vector<std::vector<int>> result;
+    if (!root) return result; // Handle empty tree
+
+    std::queue<TreeNode*> nodesQueue;
+    nodesQueue.push(root);
+    bool leftToRight = true;
+
+    while (!nodesQueue.empty()) {
+        int size = nodesQueue.size();
+        std::vector<int> level(size);
+
+        for (int i = 0; i < size; i++) {
+            TreeNode* node = nodesQueue.front();
+            nodesQueue.pop();
+            // Determine the index based on the current direction
+            int index = leftToRight ? i : (size - 1 - i);
+            level[index] = node->val; // Insert value at the determined index
+
+            // Enqueue left and right children
+            if (node->left) nodesQueue.push(node->left);
+            if (node->right) nodesQueue.push(node->right);
+        }
+
+        result.push_back(level); // Add the current level to the result
+        leftToRight = !leftToRight; // Toggle the direction
+    }
+
+    return result;
+}
+```
