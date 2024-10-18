@@ -2,54 +2,9 @@ Breakdown,
 dry run,
 walkthrough,
 visual representation,
-illustartion
+illustration,
+overview
 
-##  Add Two Numbers
-```cpp
-struct ListNode {
-    int val;            // Value of the node
-    ListNode* next;    // Pointer to the next node
-    ListNode(int x) : val(x), next(nullptr) {} // Constructor to initialize the node
-};
-
-ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-    // Create a dummy node to simplify the result list creation
-    ListNode *dummy = new ListNode(0); 
-    ListNode *temp = dummy; // Pointer to build the result list
-    int carry = 0; // Variable to hold carry value for sums greater than 9
-
-    // Iterate while there are still nodes to process in either list or there's a carry
-    while ((l1 != nullptr || l2 != nullptr) || carry) {
-        int sum = 0; // Initialize sum for this digit
-
-        // Add value from the first list if available
-        if (l1 != nullptr) {
-            sum += l1->val; // Add current value from l1
-            l1 = l1->next; // Move to the next node in l1
-        }
-        
-        // Add value from the second list if available
-        if (l2 != nullptr) {
-            sum += l2->val; // Add current value from l2
-            l2 = l2->next; // Move to the next node in l2
-        }
-        
-        // Add the carry from the previous digit addition
-        sum += carry; 
-        
-        // Calculate the new carry for the next digit (sum greater than 9)
-        carry = sum / 10; 
-        
-        // Create a new node with the value of the current digit (sum % 10)
-        ListNode *node = new ListNode(sum % 10); 
-        temp->next = node; // Link the new node to the result list
-        temp = temp->next; // Move the pointer to the new node
-    }
-
-    // Return the next node of the dummy (head of the result list)
-    return dummy->next; 
-}
-```
 
 
 
