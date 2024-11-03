@@ -146,3 +146,52 @@ ListNode* appendSums(ListNode* head, int M, int N) {
 }
 ```
 
+
+
+
+
+
+
+
+##  Segregate Odd-Even
+
+```cpp
+/*
+    Time Complexity : O(N)
+    Space Complexity : O(1)
+
+    where 'N' is the length of the input linked list.
+*/
+
+Node *oddEvenLinkedList(Node *head) {
+    // No need to modify the list if it contains less than two nodes.
+    if (head == nullptr || head->next == nullptr) {
+        return head;
+    }
+
+    Node *oddNode = head, *evenNode = head->next;
+    Node *curNode = evenNode->next, *evenHead = evenNode;
+    int pos = 1;
+
+    while (curNode != nullptr) {
+        if (pos & 1) {  
+            // Odd position.
+            oddNode->next = curNode;
+            oddNode = curNode;
+        } else { 
+            // Even position.
+            evenNode->next = curNode;
+            evenNode = curNode;
+        }
+
+        pos++;
+        curNode = curNode->next;
+    }
+
+    oddNode->next = evenHead;  
+    // Append even linked list at end of odd linked list.
+    evenNode->next = nullptr;
+
+    return head;
+}
+```
