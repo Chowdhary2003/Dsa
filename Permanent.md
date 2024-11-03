@@ -195,3 +195,59 @@ Node *oddEvenLinkedList(Node *head) {
     return head;
 }
 ```
+
+
+
+
+
+
+
+## Queue using array
+
+```cpp
+int frontTrack, rear, currentSize;
+    int capacity;
+    vector<int> queue;
+	Queue (int capacity) {
+		this->capacity = capacity;
+		frontTrack = this->currentSize = 0;
+		rear = capacity - 1;
+		queue.resize(this->capacity);
+	}
+
+	bool isEmpty() {
+		return currentSize == 0;
+	}
+	
+	int size() {
+		return currentSize;
+	}
+	
+	int front() {
+		if(isEmpty()) {
+			return -1;
+		}
+		return this->queue[this->frontTrack];
+	}
+	
+	int back() {
+		if (isEmpty()) {
+            return -1;
+		}
+        return this->queue[this->rear];
+	}
+	
+	void push(int element) {
+		if (currentSize == capacity) {
+            return;
+		}
+        this->rear = (this->rear + 1) % this->capacity;
+        this->queue[this->rear] = element;
+        this->currentSize = (this->currentSize) + 1;
+	}
+	
+	void pop() {
+		this->frontTrack = (this->frontTrack + 1) % this->capacity;
+        this->currentSize = this->currentSize - 1;
+	}
+```
