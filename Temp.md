@@ -11,50 +11,6 @@ overview
 
 
 
-## Online stock span
-
-```cpp
-std::vector<int> calculateSpan(const std::vector<int>& prices) {
-    int n = prices.size();
-    std::vector<int> span(n);
-    std::stack<int> s;
-
-    for (int i = 0; i < n; ++i) {
-        while (!s.empty() && prices[s.top()] <= prices[i]) {
-            s.pop();
-        }
-        span[i] = s.empty() ? (i + 1) : (i - s.top());
-        s.push(i);
-    }
-
-    return span;
-}
-
-```
-
-
-
-## Reversing a queue
-
-```cpp
-void reverseQueue(std::queue<int>& q) {
-    std::stack<int> s;
-
-    // Transfer elements from the queue to the stack
-    while (!q.empty()) {
-        s.push(q.front());
-        q.pop();
-    }
-
-    // Transfer elements back from the stack to the queue
-    while (!s.empty()) {
-        q.push(s.top());
-        s.pop();
-    }
-}
-```
-
-
 ## Valid parantheses
 
 
