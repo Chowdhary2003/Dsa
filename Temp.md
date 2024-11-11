@@ -9,56 +9,6 @@ overview
 
 
 
-
-
-## Valid parantheses
-
-
-```cpp
-bool isBalanced(const std::string& S) {
-    std::stack<char> stack;
-    std::unordered_map<char, char> bracketMap = {{')', '('}, {'}', '{'}, {']', '['}};
-
-    for (char c : S) {
-        if (bracketMap.count(c) == 0) { // If it's an opening bracket
-            stack.push(c);
-        } else { // If it's a closing bracket
-            if (stack.empty() || stack.top() != bracketMap[c]) {
-                return false; // Unmatched closing bracket
-            }
-            stack.pop(); // Match found, pop the stack
-        }
-    }
-
-    return stack.empty(); // True if stack is empty (balanced)
-}
-```
-
-
-
-
-## Diameter
-
-```cpp
-int diameterOfBinaryTree(Node* root) {
-    int diameter = 0;
-    height(root, diameter);
-    return diameter;
-}
-
-int height(Node* node, int& diameter) {
-    if (!node) {
-        return 0;
-    }
-    int lh = height(node->left, diameter);
-    int rh = height(node->right, diameter);
-    diameter = max(diameter, lh + rh);
-    return 1 + max(lh, rh);
-}
-```
-
-
-
 ## LCA
 
 ```cpp
