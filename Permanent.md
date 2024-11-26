@@ -251,3 +251,99 @@ int frontTrack, rear, currentSize;
         this->currentSize = this->currentSize - 1;
 	}
 ```
+
+
+
+
+# Basic
+
+
+
+## Sum of all divisors from 1 to N
+```cpp
+// Function to calculate the sum of divisors of a given number i
+int sum_of_divisors(int i) {
+    int total = 0;
+    for (int d = 1; d <= sqrt(i); ++d) {
+        if (i % d == 0) {
+            total += d;
+            if (d != i / d) {  // Avoid adding the square root twice when i is a perfect square
+                total += i / d;
+            }
+        }
+    }
+    return total;
+}
+
+// Function to calculate the sum of divisors from 1 to n
+int sum_of_divisors_up_to_n(int n) {
+    int total_sum = 0;
+    for (int i = 1; i <= n; ++i) {
+        total_sum += sum_of_divisors(i);
+    }
+    return total_sum;
+}
+```
+
+
+
+
+
+
+## Sum of first n terms
+
+```cpp
+  // Edge case: If n is 0 or negative, return 0 (no terms to sum)
+    if (n <= 0) {
+        cout << "The sum of the series is: 0" << endl;
+        return 0;
+    }
+
+    // Initialize sum
+    int sum = 0;
+
+    // Calculate sum of the series
+    for (int i = 1; i <= n; ++i) {
+        sum += (i + 1) * 10 + 3;
+    }
+
+    // Output the result
+    cout << "The sum of the series is: " << sum << endl;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Fibonacci Number
+
+```cpp
+int fibonacci(int n) {
+    if (n < 0) {
+        throw invalid_argument("n must be a non-negative integer.");
+    }
+
+    if (n == 0) return 0;  // Base case: F(0) = 0
+    if (n == 1) return 1;  // Base case: F(1) = 1
+
+    int a = 0, b = 1;  // Initialize first two Fibonacci numbers
+
+    // Iteratively calculate Fibonacci numbers
+    for (int i = 2; i <= n; ++i) {
+        int temp = a + b;
+        a = b;
+        b = temp;
+    }
+
+    return b;  // b now holds F(n)
+}
+```
+
