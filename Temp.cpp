@@ -369,3 +369,153 @@ int splitArray(const vector<int>& nums, int k) {
     }
     return left;  // The minimized largest sum is found
 }
+
+
+
+Painter's Partition
+
+// Helper function to check if it's possible to paint the boards with maxTime as the limit
+bool canPaint(const vector<int>& boards, int n, int k, int maxTime) {
+    int painters = 1;  // Start with one painter
+    int current_time = 0;
+    
+    for (int i = 0; i < n; ++i) {
+        if (current_time + boards[i] > maxTime) {
+            painters++;  // Need a new painter
+            current_time = boards[i];  // Start new painter with this board
+            if (painters > k) {
+                return false;  // If number of painters exceeds k, it's not possible
+            }
+        } else {
+            current_time += boards[i];  // Add board to the current painter's time
+        }
+    }
+    
+    return true;  // It's possible to paint with the given maxTime
+}
+
+// Function to find the minimum time to paint all boards with k painters
+int minTimeToPaint(const vector<int>& boards, int n, int k) {
+    // Edge case: only one painter, must paint all boards
+    if (k == 1) {
+        return accumulate(boards.begin(), boards.end(), 0);
+    }
+
+    // Edge case: more painters than boards, each painter takes one board
+    if (k >= n) {
+        return *max_element(boards.begin(), boards.end());
+    }
+
+    // Binary search for the minimum maximum time
+    int low = *max_element(boards.begin(), boards.end());  // Max board length
+    int high = accumulate(boards.begin(), boards.end(), 0);  // Sum of all board lengths
+    
+    while (low < high) {
+        int mid = low + (high - low) / 2;  // Avoid overflow
+
+        if (canPaint(boards, n, k, mid)) {
+            high = mid;  // Try to minimize the maxTime
+        } else {
+            low = mid + 1;  // Increase the time
+        }
+    }
+
+    return low;  // The minimum maximum time
+}
+
+
+Median of Two Sorted Arrays
+
+double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2) {
+    // Ensure nums1 is the smaller array to minimize binary search range
+    if (nums1.size() > nums2.size()) {
+        std::swap(nums1, nums2);
+    }
+
+    int m = nums1.size(), n = nums2.size();
+    int left = 0, right = m;
+
+    while (left <= right) {
+        // Partition the first array nums1 at index i
+        int i = left + (right - left) / 2;
+        // Partition the second array nums2 at index j
+        int j = (m + n + 1) / 2 - i;
+
+        // Elements to the left of the partitions
+        int maxLeft1 = (i == 0) ? INT_MIN : nums1[i - 1];
+        int maxLeft2 = (j == 0) ? INT_MIN : nums2[j - 1];
+        // Elements to the right of the partitions
+        int minRight1 = (i == m) ? INT_MAX : nums1[i];
+        int minRight2 = (j == n) ? INT_MAX : nums2[j];
+
+        // If partition is correct
+        if (maxLeft1 <= minRight2 && maxLeft2 <= minRight1) {
+            // If total length is odd, return the max of the left partition
+            if ((m + n) % 2 == 1) {
+                return std::max(maxLeft1, maxLeft2);
+            } else {
+                // If total length is even, return the average of the two middle elements
+                return (std::max(maxLeft1, maxLeft2) + std::min(minRight1, minRight2)) / 2.0;
+            }
+        } 
+        // If partition in nums1 is too far left, move it to the right
+        else if (maxLeft1 > minRight2) {
+            right = i - 1;
+        } 
+        // If partition in nums2 is too far left, move partition in nums1 to the right
+        else {
+            left = i + 1;
+        }
+    }
+
+    // If we reach here, the arrays were not sorted or have an issue
+    throw std::invalid_argument("Input arrays are not sorted.");
+}
+
+
+
+
+
+K-th element of two Arrays
+
+
+// Function to find the kth element in the merged sorted arrays a and b
+int findKthElement(const vector<int>& a, const vector<int>& b, int k) {
+    int m = a.size();
+    int n = b.size();
+
+    // Ensure that we binary search on the smaller array for efficiency
+    if (m > n) {
+        return findKthElement(b, a, k);  // Swap a and b
+    }
+
+    int low = 0, high = m;
+
+    while (low <= high) {
+        int i = (low + high) / 2;         // Partition index for array a
+        int j = k - i;                    // Partition index for array b
+
+        // Handle out of bounds conditions
+        int aLeft = (i > 0) ? a[i - 1] : INT_MIN;  // Left element of a partition, -∞ if i is 0
+        int aRight = (i < m) ? a[i] : INT_MAX;     // Right element of a partition, ∞ if i is m
+        int bLeft = (j > 0) ? b[j - 1] : INT_MIN;  // Left element of b partition, -∞ if j is 0
+        int bRight = (j < n) ? b[j] : INT_MAX;     // Right element of b partition, ∞ if j is n
+
+        // Check if the partition is correct
+        if (aLeft <= bRight && bLeft <= aRight) {
+            // If we have found the kth element
+            return max(aLeft, bLeft);
+        }
+        else if (aLeft > bRight) {
+            // Move the partition of a[] to the left
+            high = i - 1;
+        }
+        else {
+            // Move the partition of a[] to the right
+            low = i + 1;
+        }
+    }
+
+    // If we reach here, it means there was an issue (invalid inputs or something unexpected)
+    throw runtime_error("Input arrays are not sorted or there's an issue with the partitioning logic.");
+}
