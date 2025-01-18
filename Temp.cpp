@@ -433,6 +433,59 @@ bool searchMatrix(const vector<vector<int>>& matrix, int target) {
 }
 
 
+Find a Peak Element II
+
+// Helper function to find the peak element in the middle column
+int findMaxInColumn(const vector<vector<int>>& mat, int col) {
+    int maxRow = 0;
+    int m = mat.size();
+    
+    for (int i = 1; i < m; ++i) {
+        if (mat[i][col] > mat[maxRow][col]) {
+            maxRow = i;
+        }
+    }
+    
+    return maxRow;
+}
+
+// Function to find a peak element
+vector<int> findPeakElement(const vector<vector<int>>& mat) {
+    int m = mat.size();
+    int n = mat[0].size();
+    
+    int left = 0, right = n - 1;
+    
+    // Binary search on columns
+    while (left <= right) {
+        int midCol = left + (right - left) / 2;
+        
+        // Find the row with the maximum element in the middle column
+        int maxRow = findMaxInColumn(mat, midCol);
+        
+        // Compare the middle element with its neighbors
+        int leftVal = (midCol > 0) ? mat[maxRow][midCol - 1] : -1;
+        int rightVal = (midCol < n - 1) ? mat[maxRow][midCol + 1] : -1;
+        
+        // If the current element is greater than both neighbors, it's a peak
+        if (mat[maxRow][midCol] >= leftVal && mat[maxRow][midCol] >= rightVal) {
+            return {maxRow, midCol};
+        }
+        // If left neighbor is larger, move search to the left half
+        else if (leftVal > mat[maxRow][midCol]) {
+            right = midCol - 1;
+        }
+        // If right neighbor is larger, move search to the right half
+        else {
+            left = midCol + 1;
+        }
+    }
+    
+    return {}; // This should never be reached since the problem guarantees a peak
+}
+
+
+
 
 
 Median in a row-wise sorted Matrix
