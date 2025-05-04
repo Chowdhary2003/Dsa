@@ -98,32 +98,87 @@ Output: []
 
 ***Problem:***
 ```
+Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sum to target.
 
+Each number in candidates may only be used once in the combination.
 ```
+
+> [!Note]
+> The solution set must not contain duplicate combinations.
 
 
 
 ***Complexity:***
 ```
-       Time Complexity: O(n)
-       Space Complexity: O(1)
+       Time Complexity: O(2^n * k)
+       Space Complexity: O(2^n * k)
 ```
 
 
 
 ***Code:***
 ```cpp
+#include <vector>
+#include <algorithm>
 
+
+    void backtrack(int start, int target, const vector<int>& candidates, vector<int>& current, vector<vector<int>>& result) {
+        // Base case: if the target is met, we add the current combination to the result
+        if (target == 0) {
+            result.push_back(current);
+            return;
+        }
+        
+        for (int i = start; i < candidates.size(); ++i) {
+            // If the current number exceeds the target, stop exploring further
+            if (candidates[i] > target) break;
+            
+            // Skip duplicates to avoid repeated combinations
+            if (i > start && candidates[i] == candidates[i - 1]) continue;
+            
+            // Include candidates[i] in the combination and move to the next index
+            current.push_back(candidates[i]);
+            // Recur for the next numbers, reducing the target by the chosen number
+            backtrack(i + 1, target - candidates[i], candidates, current, result);
+            // Backtrack: remove the last element and try the next candidate
+            current.pop_back();
+        }
+    }
+
+    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+        vector<vector<int>> result;
+        vector<int> current;
+        
+        // Sort the candidates to handle duplicates and improve pruning
+        sort(candidates.begin(), candidates.end());
+        
+        // Start backtracking from the first index
+        backtrack(0, target, candidates, current, result);
+        
+        return result;
+    }
 ```
 
 
 ***Testcases:***
 ```
-
+Input: candidates = [10,1,2,7,6,1,5], target = 8
+Output: 
+[
+[1,1,6],
+[1,2,5],
+[1,7],
+[2,6]
+]
 ```
 
 ```
-
+Input: candidates = [2,5,2,1,2], target = 5
+Output: 
+[
+[1,2,2],
+[5]
+]
 ```
 
 
