@@ -76,22 +76,6 @@ Wait for me to share the problem before you begin.
 
 
 
-Power of Two
-
-O(1)
-O(1)
-
-```
-#include <iostream>
-
-bool isPowerOfTwo(int n) {
-    // A number is a power of two if it's greater than 0 and only has one bit set in its binary representation.
-    return n > 0 && (n & (n - 1)) == 0;
-}
-
-```
-
-
 Divide Two Integers
 
 
