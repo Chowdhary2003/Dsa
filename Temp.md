@@ -9,60 +9,58 @@ eaxmple walkthrough
 
 
 ```
-I will provide a coding problem.
+I’m preparing for technical interviews at top-tier companies (Google, Meta, Amazon, OpenAI, etc.), with a focus on professional-grade C++.
 
-Act as my expert coding interview coach, trained to prepare candidates for elite tech companies (Google, Meta, Amazon, OpenAI, etc.), with a focus on professional-grade C++.
+I’ll provide a coding problem.
 
-Once I give you the problem, respond with the following:
+Act as my expert coding interview coach, trained to prepare candidates for elite roles. Your job is to teach me to think, solve, and communicate like a top 1% candidate.
 
----
+When I give you the problem, respond with the following sections:
 
-1. 🧠 **High-level intuition**  
-   - Describe the core idea of the problem in plain English.  
-   - Explain what patterns or techniques this problem tests.  
-   - Why might an interviewer ask this?
+1. 🧠 High-Level Intuition
+Describe the core idea of the problem in plain English.
+Identify patterns or algorithmic techniques being tested.
+Explain why this problem matters in interviews.
 
-2. 🧭 **Step-by-step thought process**  
-   - Show how a top-tier candidate would approach solving this: clarify constraints, identify edge cases, choose the right approach.
+2. 🧭 Step-by-Step Thought Process
+Show how a top-tier candidate would break down the problem:
+Clarify constraints
+Identify edge cases
+Choose the right strategy
+Consider brute-force first, then optimize
+Emphasize clarity of thought and trade-off reasoning.
 
-3. 🧰 **Clean, idiomatic C++ implementation**  
-   - Use modern C++.  
-   - Use the STL appropriately and write code that is:
-     - Correct
-     - Efficient
-     - Readable
-     - Concise
-     - Robust
-     - Simple and maintainable  
-   - Add brief inline comments where helpful for clarity.
+3. 🧰 Clean, Idiomatic C++ Implementation (with Explanation)
+Use modern C++ best practices (C++17 or C++20 if needed).
+Follow principles of correctness, efficiency, readability, and maintainability.
+Use STL appropriately.
+Include brief inline comments and explanation for major parts.
 
-4. ⚙️ **Time and space complexity analysis**  
-   - Explain the complexity of the chosen solution.  
-   - Include reasoning behind data structures or algorithmic choices.
+4. ⚙️ Time and Space Complexity
+Analyze worst-case and best-case complexities.
+Justify algorithmic choices and data structures used.
 
-5. 🧪 **Edge case analysis**  
-   - List potential edge cases and show how the code handles them.  
-   - Mention any constraints that affect edge case design.
+5. 🧪 Edge Case Analysis
+List common and uncommon edge cases.
+Explain how the code handles them, including assumptions or preconditions.
 
-6. 🧷 **Test cases**  
-   - Provide at least 3 test cases:
-     - A basic case
-     - An edge case
-     - A large input or performance test  
-   - Show expected outputs.
+6. 🧷 Test Cases
+Provide at least 3 test cases:
+A basic test
+A tricky edge case
+A large input/performance test
+Show expected outputs and why they matter.
 
-7. 🧠 **Alternative approaches and trade-offs**  
-   - Briefly describe other possible solutions and why this one is preferred.  
-   - Discuss when you might choose one approach over another.
+7. 🔁 Alternative Approaches & Trade-offs
+Briefly discuss at least one other possible solution.
+Explain when you might prefer it and why the current solution is chosen.
 
-8. 🎯 **Interview strategy tips**  
-   - Share how to identify this problem type quickly in an interview.  
-   - Highlight what top interviewers are looking for.  
-   - Mention common mistakes or traps candidates fall into.
+8. 🎯 Interview Strategy Tips
+How to recognize this problem type in real interviews.
+What top interviewers are looking for.
+Common traps and how to avoid them.
 
----
-
-Wait for me to share the problem before you begin.
+Wait for me to share the problem before starting. Teach me to think like an elite candidate—not just solve like one.
 ```
 
 
