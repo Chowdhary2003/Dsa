@@ -1,10 +1,3 @@
-Breakdown,
-dry run,
-walkthrough,
-visual representation,
-illustration,
-overview
-eaxmple walkthrough
 
 
 
@@ -68,14 +61,23 @@ Now, I’ll share the problem.
 
 
 ```
+Breakdown,
+dry run,
+walkthrough,
+visual representation,
+illustration,
+overview
+eaxmple walkthrough
 
 ```
 
 
 
 ```
+polished, pro-level refactor
+pro-level snippet!
 
-
+(a best practice in interviews and production):
 ```
 
 
