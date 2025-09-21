@@ -91,6 +91,36 @@ clear, concise comments added to make the logic crystal clear and easy to explai
 
 
 ```
+Teach me this code from scratch like I’m a beginner. Break it into parts, explain each one simply
+
+
+
+
+
+ Step-by-Step (Line-by-Line) Explanation
+Walk through the code line by line.
+Explain what each line does in simple terms.
+
+
+
+
+
+
+Simulation
+step-by-step visual trace
+
+
+
+Visuals
+step-by-step ASCII visualization
+
+step-by-step through the code and explain how it works using a similar ASCII visualization
+
+
+
+
+
+ Flowchart or Mind Map
 
 ```
 
