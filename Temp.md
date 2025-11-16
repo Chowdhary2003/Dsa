@@ -74,6 +74,16 @@ eaxmple walkthrough
 
 
 ```
+a final “gold standard” solution
+
+💎 Diamond Tier
+```
+
+
+
+
+
+```
 polished, pro-level refactor
 pro-level snippet!
 
