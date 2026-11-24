@@ -1,6 +1,5 @@
-# Binary Tree — C++ DSA Notes
+# Binary Tree — DSA
 
-A Markdown-only collection of binary tree problems. C++ implementations are stored inside fenced `cpp` blocks.
 
 ## Problem index
 
@@ -43,23 +42,3 @@ A Markdown-only collection of binary tree problems. C++ implementations are stor
 - [Tree Boundary Traversal.md](Tree%20Boundary%20Traversal.md)
 - [Vertical Order Traversal of a Binary Tree.md](Vertical%20Order%20Traversal%20of%20a%20Binary%20Tree.md)
 - [Zigzag Traversal.md](Zigzag%20Traversal.md)
-
-## Migration report
-
-- Existing Markdown files preserved byte-for-byte: **34**
-- Standalone C++ files converted: **5**
-- Standalone `.cpp` files remaining in this output: **0**
-
-### Converted sources
-
-- `Children sum property.cpp` → `Children sum property.md`
-- `Construct binary tree .cpp` → `Construct binary tree.md`
-- `Height.cpp` → `Height.md`
-- `LCA of 3 nodes.cpp` → `LCA of 3 nodes.md`
-- `Mirror.cpp` → `Mirror.md`
-
-## Verification
-
-Each converted source was checked to ensure its complete decoded C++ text appears unchanged inside the corresponding Markdown code block. This verifies source preservation, not compilation or algorithm correctness.
-
-Existing Markdown files were copied byte-for-byte. Keep the original branch/archive until the converted copy has been reviewed and uploaded.
