@@ -1,0 +1,246 @@
+{
+  "branch": "Linked-list",
+  "source_archive": "Dsa-Linked-list.zip",
+  "summary": {
+    "existing_markdown_files_preserved": 37,
+    "cpp_files_converted": 5,
+    "problem_markdown_files": 42,
+    "standalone_cpp_files": 0
+  },
+  "preserved_markdown_files": [
+    {
+      "path": "Dsa-Linked-list/Add 1 to number represented as LL.md",
+      "sha256": "348a22fb02c25e3bcf1e0d7bc4caf801d6cda37173f6babaffb86297cb336781",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Add Two Numbers.md",
+      "sha256": "943ca936ddbefbfb0030cf854a468407a72e118b5802d4df45db26a52894df7a",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Clone List with Next and Random.md",
+      "sha256": "3f7c456e27ebe632c9d993928b71795c03dd6619c1ea5ee6a33be7f902e1ae6f",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Construct DLL from array.md",
+      "sha256": "9606090cf5ab860e84793938cc58acfbd74bcbc1164d0f7b230fb36d93db530a",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Construct Linked List from array.md",
+      "sha256": "b2792de5a3d1dc12976c6f31bc32f5d5cde8011ed3e40140fe8a07d5909d99ea",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Copy List with Random Pointer.md",
+      "sha256": "338c92a49d737728651ae74f1e53d32fb4aa4cb27d0fdd478ebf6fc5a6a9cf49",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Delete Node in a Linked List.md",
+      "sha256": "592b1684d515199c2a47c0d881f42f6ff6ca8cf07ac513e8c014c7fc21b7ad03",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Delete all occurrences of a given key in DLL.md",
+      "sha256": "686001dbfdb0d6ab6071a1b18c14c738b3020821cc5703913efdf65240fd504c",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Delete middle of Linked list.md",
+      "sha256": "1f772f5e8c814de2ddedee3d142aea40e69d5633f4473aeed2ebdda7a048f05d",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Deletion in DLL.md",
+      "sha256": "d41763a6812db5c4f7f9064223677c1cc053c69a226e35d2517b77708eadffde",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Detect Loop in linked list.md",
+      "sha256": "d9131af71407bcd0c3994541208bc45f6ada8cf14789e5e4a8ec04ee1de0b4fa",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Detect and remove loop.md",
+      "sha256": "eb11048bbfa5092b5d9c3220797261f9a28fad918dec8eac0dda3d20b6853ea5",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Find pairs with given sum in DLL.md",
+      "sha256": "2c57dbd35162a31beaa19536bc174b5af319c7a3939b8b8a8854c90b03bae6f7",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Flattening of LL.md",
+      "sha256": "bdcb468ed8967addd35f55c938b429ac6f04c58584de19a9ec1c3ede9e2b5e2c",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Inserting a node.md",
+      "sha256": "2db5da02e78971e3349acca6fcfed834ebbb7aeca5c08494ae037f34685fc700",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Insertion at given position.md",
+      "sha256": "4738e47e5168aab54d8e5e82930973a124501185d39ead3bc82cf73b1372152b",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Insertion sort in Linked list.md",
+      "sha256": "6765ac2ad12d3de4cc95fed2c40ed103f02aae271aba648c123cd3be19255278",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Intersection of Two Linked Lists.md",
+      "sha256": "8fe6bce56c041583d06d4b0695f430a0ee110cd6c8f6dc3a807c09f1863b0d67",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/LRU Cache.md",
+      "sha256": "ac1b502bc1ded3dfb095441e0548ce1baa3ef03daf6bd56d0acd19795a94f342",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Length of linked list.md",
+      "sha256": "a02f2384bf2be2c2f44d788a648d033583d440df3ffd3afcc5767442baf46bea",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Linked List Cycle II.md",
+      "sha256": "2b0581997e768a70d3fb1c1ea301328c94f6e23fbe1342f1f7723e34f8d19a1e",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Linked List Cycle.md",
+      "sha256": "b114a7f8b76197c3c862a1519299685dface706705e91a851a345e3803ad7018",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Merge Two Sorted Lists.md",
+      "sha256": "7ba99c9a20fcc78a0354c89d711d8739d8fa534b4801bc07ff95c2424ad22546",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Middle of the Linked List.md",
+      "sha256": "7153c183dca28f0c99172f7a1ddbe67538797adb48c24a13cacc52bc04fbb5cc",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Node where cycle begins.md",
+      "sha256": "48d472449daae2f30bdc7f8f38b7938b5bfc9403a740ff5af3c02ef60e731f1d",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Palindrome Linked List.md",
+      "sha256": "480a2dd2a14d197898160b22db99dfe16fcc7d675bdf6d2c15c88eb92057a85c",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Remove Nth Node From End of List.md",
+      "sha256": "ba642ffac0fe15afb01ff716a82b22c8d9189b39a7cd3c96d950c3df1727d770",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Remove duplicates from a sorted DLL.md",
+      "sha256": "983fdd4e28dd2f05a5257870b64a6d5d7ecd95750498ad0e9276df562717739a",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Reverse Linked List.md",
+      "sha256": "98f5b90191bced8694151cd9efbfa3759975bc43ca6e76a6ae79bc7e6e517067",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Reverse Nodes in k-Group.md",
+      "sha256": "bfdbb2ee4bcff96a6cc8e534333801a902b0be72b626b2be1a009a334881fa01",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Reverse a DLL.md",
+      "sha256": "6b38da93e0d950c8a164daa2864bf7126f12940fa794cdc82cb7ae7e1e331f74",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Rotate List.md",
+      "sha256": "198bdc52efaec836446fe484af28531da3733e235e455b4d71a12efa35adaac6",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Search an element.md",
+      "sha256": "55d2364d147c239509cf2ef9c04ef19b3d5313cbdb6be4e3b18b3246b90f387d",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Segregate odd even nodes.md",
+      "sha256": "d6878415f0f9b90238bb0362094459af3d51fa48e63efc42f73097ec88f98b4c",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Sort LL of 0's,1's & 2's.md",
+      "sha256": "79fb54789a544de5c45ce1b70cdde1df8a86ec4364a2eeefa20447855b8e097e",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Sort the Linked LIst.md",
+      "sha256": "2204239882172e42b920f295200242415cc8009dcb4453e099d05774fe9d0ab7",
+      "preserved_byte_for_byte": true
+    },
+    {
+      "path": "Dsa-Linked-list/Swap nodes in pairs.md",
+      "sha256": "28dc9a21ed2d20b5919bc0db0d56c99eba58ed83d389a6a46a17e5032016e4e7",
+      "preserved_byte_for_byte": true
+    }
+  ],
+  "converted_cpp_files": [
+    {
+      "source": "Dsa-Linked-list/Append nodes.cpp",
+      "output": "Dsa-Linked-list/Append nodes.md",
+      "action": "wrapped_cpp_source",
+      "source_sha256": "21c1da598c31456cd88bf6377a28d4e36a816cb38ce67de334e7b5d934ea3f58",
+      "output_sha256": "3984d53382c3f33381e5835204fcd0503f9c1e4b64e0bbb29c903afd2883b6af",
+      "notes": "Original C++ source bytes embedded unchanged inside a fenced cpp code block; problem summary is explicitly marked as inferred where applicable."
+    },
+    {
+      "source": "Dsa-Linked-list/Delete Xth node.cpp",
+      "output": "Dsa-Linked-list/Delete Xth node.md",
+      "action": "wrapped_cpp_source",
+      "source_sha256": "7fe348c09e2602a26f534e510d19ac25bb6b96e6466025178e64fdf513bcd6d0",
+      "output_sha256": "5cc3be10dca78fe042ba0a54b20ed8439d9442091e3c077de6e7b27edbdcb583",
+      "notes": "Original C++ source bytes embedded unchanged inside a fenced cpp code block; problem summary is explicitly marked as inferred where applicable."
+    },
+    {
+      "source": "Dsa-Linked-list/Deletion of node.cpp",
+      "output": "Dsa-Linked-list/Deletion of node.md",
+      "action": "wrapped_cpp_source",
+      "source_sha256": "fd3fd2fe5607c3afcfaddff21f4f33b05a4f275a2db363ffcf9489c078c55acc",
+      "output_sha256": "b235ba87ecaaeff50f552e9d8b95cf1c0b304238b0916a98dc124457782ec815",
+      "notes": "Original C++ source bytes embedded unchanged inside a fenced cpp code block; problem summary is explicitly marked as inferred where applicable."
+    },
+    {
+      "source": "Dsa-Linked-list/Length of loop in linkedlist.cpp",
+      "output": "Dsa-Linked-list/Length of loop in linkedlist.md",
+      "action": "renamed_markdown_content",
+      "source_sha256": "38299dcf4741a00c87e40ce845701f9d00d2aa9cf470c9a74eb838919e53ff18",
+      "output_sha256": "38299dcf4741a00c87e40ce845701f9d00d2aa9cf470c9a74eb838919e53ff18",
+      "notes": "Source already contained Problem, Complexity, Code, and Testcases sections with a fenced C++ block; content retained unchanged."
+    },
+    {
+      "source": "Dsa-Linked-list/Segregate even & odd nodes.cpp",
+      "output": "Dsa-Linked-list/Segregate even & odd nodes.md",
+      "action": "wrapped_cpp_source",
+      "source_sha256": "59db58f55ea5f6263e8534a4213b4520f2346e7aad0321b47d314dac317334de",
+      "output_sha256": "d817d229e53f15afe038c2b321ed007d42ed05f08b290e1c26cbb6172f333ec4",
+      "notes": "Original C++ source bytes embedded unchanged inside a fenced cpp code block; problem summary is explicitly marked as inferred where applicable."
+    }
+  ],
+  "verification": {
+    "all_existing_markdown_hashes_recorded": true,
+    "all_converted_outputs_are_markdown": true,
+    "all_converted_outputs_contain_fenced_cpp_code": true,
+    "output_filename_collisions": [],
+    "standalone_cpp_files_in_output": 0
+  }
+}
