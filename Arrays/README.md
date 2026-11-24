@@ -1,0 +1,201 @@
+# Arrays — C++ DSA Notes
+
+A Markdown-only collection of array and matrix problems. C++ implementations are stored inside fenced `cpp` blocks.
+
+## Problem index
+
+- [3Sum.md](3Sum.md)
+- [4Sum.md](4Sum.md)
+- [Aggressive Cows.md](Aggressive%20Cows.md)
+- [Allocate Books or Allocate Minimum Pages.md](Allocate%20Books%20or%20Allocate%20Minimum%20Pages.md)
+- [Alternate +ve,-ve nums.md](Alternate%20+ve,-ve%20nums.md)
+- [Best Time to Buy and Sell Stock II.md](Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.md)
+- [Best Time to Buy and Sell Stock.md](Best%20Time%20to%20Buy%20and%20Sell%20Stock.md)
+- [Binary Search.md](Binary%20Search.md)
+- [Brick Wall.md](Brick%20Wall.md)
+- [Bubble Sort.md](Bubble%20Sort.md)
+- [Capacity To Ship Packages Within D Days.md](Capacity%20To%20Ship%20Packages%20Within%20D%20Days.md)
+- [Check Arithmetic Progression.md](Check%20Arithmetic%20Progression.md)
+- [Check if an Array is Sorted.md](Check%20if%20an%20Array%20is%20Sorted.md)
+- [Chocolate Distribution.md](Chocolate%20Distribution.md)
+- [Coin Change.md](Coin%20Change.md)
+- [Combination Sum.md](Combination%20Sum.md)
+- [Common in all three arrays.md](Common%20in%20all%20three%20arrays.md)
+- [Container With Most Water.md](Container%20With%20Most%20Water.md)
+- [Contains Duplicate.md](Contains%20Duplicate.md)
+- [Count Inversions.md](Count%20Inversions.md)
+- [Count occurrences of a number in a sorted array with duplicates.md](Count%20occurrences%20of%20a%20number%20in%20a%20sorted%20array%20with%20duplicates.md)
+- [Count subarrays with given xor K.md](Count%20subarrays%20with%20given%20xor%20K.md)
+- [Cyclically rotate an array.md](Cyclically%20rotate%20an%20array.md)
+- [Equal 0, 1 and 2.md](Equal%200,%201%20and%202.md)
+- [Equilibrium Index.md](Equilibrium%20Index.md)
+- [Factorial of large numbers.md](Factorial%20of%20large%20numbers.md)
+- [Find First and Last Position of Element in Sorted Array.md](Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array.md)
+- [Find Modular exponentiation(x^n).md](Find%20Modular%20exponentiation(x^n).md)
+- [Find Nth root of number M.md](Find%20Nth%20root%20of%20number%20M.md)
+- [Find Num that appear once, remaining twice.md](Find%20Num%20that%20appear%20once,%20remaining%20twice.md)
+- [Find Pair with Given Difference.md](Find%20Pair%20with%20Given%20Difference.md)
+- [Find Peak Element.md](Find%20Peak%20Element.md)
+- [Find Pivot Index.md](Find%20Pivot%20Index.md)
+- [Find a Peak Element II.md](Find%20a%20Peak%20Element%20II.md)
+- [Find duplicates in an array.md](Find%20duplicates%20in%20an%20array.md)
+- [Find minimum and maximum element in an array.md](Find%20minimum%20and%20maximum%20element%20in%20an%20array.md)
+- [Find minimum in Rotated Sorted Array.md](Find%20minimum%20in%20Rotated%20Sorted%20Array.md)
+- [Find rotation.md](Find%20rotation.md)
+- [Find the Duplicate Number.md](Find%20the%20Duplicate%20Number.md)
+- [Find the Smallest Divisor Given a Threshold.md](Find%20the%20Smallest%20Divisor%20Given%20a%20Threshold.md)
+- [Find the repeating and missing number.md](Find%20the%20repeating%20and%20missing%20number.md)
+- [Finding square root.md](Finding%20square%20root.md)
+- [First Bad Version.md](First%20Bad%20Version.md)
+- [First Missing Positive.md](First%20Missing%20Positive.md)
+- [First Repeating Element.md](First%20Repeating%20Element.md)
+- [First non-repeating element.md](First%20non-repeating%20element.md)
+- [Floor & Ceil in Sorted Array.md](Floor%20&%20Ceil%20in%20Sorted%20Array.md)
+- [Grid Illumination.md](Grid%20Illumination.md)
+- [Implement two stacks in an array.md](Implement%20two%20stacks%20in%20an%20array.md)
+- [Indexes of a subarray with given sum.md](Indexes%20of%20a%20subarray%20with%20given%20sum.md)
+- [Insert Delete GetRandom O(1) - Duplicates allowed.md](Insert%20Delete%20GetRandom%20O(1)%20-%20Duplicates%20allowed.md)
+- [Insert Delete GetRandom O(1).md](Insert%20Delete%20GetRandom%20O(1).md)
+- [Insert Interval.md](Insert%20Interval.md)
+- [Insertion Sort.md](Insertion%20Sort.md)
+- [Intersection of two arrays.md](Intersection%20of%20two%20arrays.md)
+- [Is Subsequence.md](Is%20Subsequence.md)
+- [Koko Eating Bananas.md](Koko%20Eating%20Bananas.md)
+- [Kth Missing Positive Number.md](Kth%20Missing%20Positive%20Number.md)
+- [Kth element of 2 sorted arrays.md](Kth%20element%20of%202%20sorted%20arrays.md)
+- [Largest & Smallest element.md](Largest%20&%20Smallest%20element.md)
+- [Leaders in an array.md](Leaders%20in%20an%20array.md)
+- [Linerar seearch.md](Linerar%20seearch.md)
+- [Longest Consecutive Sequence.md](Longest%20Consecutive%20Sequence.md)
+- [Longest Subarray Zero Sum.md](Longest%20Subarray%20Zero%20Sum.md)
+- [Longest Substring Without Repeating Characters.md](Longest%20Substring%20Without%20Repeating%20Characters.md)
+- [Longest alternating subsequence.md](Longest%20alternating%20subsequence.md)
+- [Longest subarray with sum K.md](Longest%20subarray%20with%20sum%20K.md)
+- [Majority Element II [n%3].md](Majority%20Element%20II%20[n%3].md)
+- [Majority Element [n%2].md](Majority%20Element%20[n%2].md)
+- [Make Unique Array.md](Make%20Unique%20Array.md)
+- [Matrix Is Symmetric or not.md](Matrix%20Is%20Symmetric%20or%20not.md)
+- [Matrix Median.md](Matrix%20Median.md)
+- [Max Chunks To Make Sorted II.md](Max%20Chunks%20To%20Make%20Sorted%20II.md)
+- [Max Chunks To Make Sorted.md](Max%20Chunks%20To%20Make%20Sorted.md)
+- [Max Consecutive Ones.md](Max%20Consecutive%20Ones.md)
+- [Max sum path in two arrays.md](Max%20sum%20path%20in%20two%20arrays.md)
+- [Maximum Index.md](Maximum%20Index.md)
+- [Maximum Product Subarray.md](Maximum%20Product%20Subarray.md)
+- [Maximum Subarray Sum.md](Maximum%20Subarray%20Sum.md)
+- [Maximum area between two vertical lines.md](Maximum%20area%20between%20two%20vertical%20lines.md)
+- [Maximum sum of i*arr[i].md](Maximum%20sum%20of%20i*arr[i].md)
+- [Median of Two Sorted Arrays.md](Median%20of%20Two%20Sorted%20Arrays.md)
+- [Merge Intervals.md](Merge%20Intervals.md)
+- [Merge Sorted Array.md](Merge%20Sorted%20Array.md)
+- [Minimize Max Distance to Gas Station.md](Minimize%20Max%20Distance%20to%20Gas%20Station.md)
+- [Minimize the Heights II.md](Minimize%20the%20Heights%20II.md)
+- [Minimum Platforms.md](Minimum%20Platforms.md)
+- [Minimum days to make M bouquets.md](Minimum%20days%20to%20make%20M%20bouquets.md)
+- [Missing Number in array.md](Missing%20Number%20in%20array.md)
+- [Move All Negative Numbers To Beginning And Positive To End.md](Move%20All%20Negative%20Numbers%20To%20Beginning%20And%20Positive%20To%20End.md)
+- [Move Zeroes.md](Move%20Zeroes.md)
+- [Move all negative elements to end.md](Move%20all%20negative%20elements%20to%20end.md)
+- [Next Greater Element III.md](Next%20Greater%20Element%20III.md)
+- [Next Greater Element.md](Next%20Greater%20Element.md)
+- [Next Permutation.md](Next%20Permutation.md)
+- [Non-Decreasing Array.md](Non-Decreasing%20Array.md)
+- [Painter's Partition Problem.md](Painter's%20Partition%20Problem.md)
+- [Pair Sum.md](Pair%20Sum.md)
+- [Pascal's Triangle.md](Pascal's%20Triangle.md)
+- [Pow(x, n).md](Pow(x,%20n).md)
+- [Print Spiral.md](Print%20Spiral.md)
+- [Product of Array Except Self.md](Product%20of%20Array%20Except%20Self.md)
+- [Rearrange array in alternating positive and negative items.md](Rearrange%20array%20in%20alternating%20positive%20and%20negative%20items.md)
+- [Remove Duplicates from Sorted Array.md](Remove%20Duplicates%20from%20Sorted%20Array.md)
+- [Reverse Pairs.md](Reverse%20Pairs.md)
+- [Reverse an Array.md](Reverse%20an%20Array.md)
+- [Rotate Array(right).md](Rotate%20Array(right).md)
+- [Rotate Image.md](Rotate%20Image.md)
+- [Rotate array left.md](Rotate%20array%20left.md)
+- [Rotate matrix clockwise.md](Rotate%20matrix%20clockwise.md)
+- [Rotate matrix.md](Rotate%20matrix.md)
+- [Row with max 1's.md](Row%20with%20max%201's.md)
+- [Running Sum of 1d Array.md](Running%20Sum%20of%201d%20Array.md)
+- [Search Insert Position.md](Search%20Insert%20Position.md)
+- [Search a 2D Matrix.md](Search%20a%202D%20Matrix.md)
+- [Search in Rotated Sorted Array II.md](Search%20in%20Rotated%20Sorted%20Array%20II.md)
+- [Search in Rotated Sorted Array.md](Search%20in%20Rotated%20Sorted%20Array.md)
+- [Search in a 2D Matrix II.md](Search%20in%20a%202D%20Matrix%20II.md)
+- [Second Largest Element in an Array.md](Second%20Largest%20Element%20in%20an%20Array.md)
+- [Second smallest.md](Second%20smallest.md)
+- [Selection Sort.md](Selection%20Sort.md)
+- [Set Matrix Zeroes.md](Set%20Matrix%20Zeroes.md)
+- [Single Element in a Sorted Array.md](Single%20Element%20in%20a%20Sorted%20Array.md)
+- [Smallest +ve Integer cannot represented as Sum.md](Smallest%20+ve%20Integer%20cannot%20represented%20as%20Sum.md)
+- [Smallest Positive missing number.md](Smallest%20Positive%20missing%20number.md)
+- [Sort 0 1 2 (Dutch National Flag Algorithm).md](Sort%200%201%202%20(Dutch%20National%20Flag%20Algorithm).md)
+- [Spiral Matrix.md](Spiral%20Matrix.md)
+- [Squares of a Sorted Array.md](Squares%20of%20a%20Sorted%20Array.md)
+- [Stock span.md](Stock%20span.md)
+- [Subarray Sum Equals K.md](Subarray%20Sum%20Equals%20K.md)
+- [Subarray Sums Divisible by K.md](Subarray%20Sums%20Divisible%20by%20K.md)
+- [Subarray with 0 sum.md](Subarray%20with%200%20sum.md)
+- [Subarray with given sum.md](Subarray%20with%20given%20sum.md)
+- [Subarrays with equal 1s and 0s.md](Subarrays%20with%20equal%201s%20and%200s.md)
+- [Sum Of Zeroes.md](Sum%20Of%20Zeroes.md)
+- [Transpose of Matrix.md](Transpose%20of%20Matrix.md)
+- [Trapping Rain Water.md](Trapping%20Rain%20Water.md)
+- [Triplet Sum in Array.md](Triplet%20Sum%20in%20Array.md)
+- [Two Sum - Pair with Given Sum.md](Two%20Sum%20-%20Pair%20with%20Given%20Sum.md)
+- [Two Sum.md](Two%20Sum.md)
+- [Union of two sorted arrays.md](Union%20of%20two%20sorted%20arrays.md)
+- [Unique Paths.md](Unique%20Paths.md)
+- [Wave Array.md](Wave%20Array.md)
+- [coverages of all zero.md](coverages%20of%20all%20zero.md)
+- [split array largest sum.md](split%20array%20largest%20sum.md)
+- [umber of Subarrays with Bounded Maximum.md](umber%20of%20Subarrays%20with%20Bounded%20Maximum.md)
+
+## Migration report
+
+- Existing Markdown files preserved byte-for-byte: **113**
+- Standalone C++ source files converted: **33**
+- Standalone `.cpp` files remaining in this output: **0**
+- Unclassified files requiring review: **0**
+
+### Converted sources
+
+- `Alternate +ve,-ve nums.cpp` → `Alternate +ve,-ve nums.md`
+- `Chocolate Distribution.cpp` → `Chocolate Distribution.md`
+- `Coin Change.cpp` → `Coin Change.md`
+- `Cyclically rotate an array.cpp` → `Cyclically rotate an array.md`
+- `Factorial of large numbers.cpp` → `Factorial of large numbers.md`
+- `Find Modular exponentiation(x^n).cpp` → `Find Modular exponentiation(x^n).md`
+- `Find duplicates in an array.cpp` → `Find duplicates in an array.md`
+- `Find minimum and maximum element in an array.cpp` → `Find minimum and maximum element in an array.md`
+- `First Repeating Element.cpp` → `First Repeating Element.md`
+- `First non-repeating element.cpp` → `First non-repeating element.md`
+- `Implement two stacks in an array.cpp` → `Implement two stacks in an array.md`
+- `Indexes of a subarray with given sum.cpp` → `Indexes of a subarray with given sum.md`
+- `Longest alternating subsequence.cpp` → `Longest alternating subsequence.md`
+- `Max sum path in two arrays.cpp` → `Max sum path in two arrays.md`
+- `Maximum Index.cpp` → `Maximum Index.md`
+- `Maximum area between two vertical lines.cpp` → `Maximum area between two vertical lines.md`
+- `Maximum sum of i*arr[i].cpp` → `Maximum sum of i*arr[i].md`
+- `Minimize Max Distance to Gas Station.cpp` → `Minimize Max Distance to Gas Station.md`
+- `Minimize the Heights II.cpp` → `Minimize the Heights II.md`
+- `Move all negative elements to end.cpp` → `Move all negative elements to end.md`
+- `Next Greater Element.cpp` → `Next Greater Element.md`
+- `Rotate matrix clockwise.cpp` → `Rotate matrix clockwise.md`
+- `Rotate matrix.cpp` → `Rotate matrix.md`
+- `Second smallest.cpp` → `Second smallest.md`
+- `Smallest +ve Integer cannot represented as Sum.cpp` → `Smallest +ve Integer cannot represented as Sum.md`
+- `Smallest Positive missing number.cpp` → `Smallest Positive missing number.md`
+- `Stock span.cpp` → `Stock span.md`
+- `Subarray with 0 sum.cpp` → `Subarray with 0 sum.md`
+- `Subarray with given sum.cpp` → `Subarray with given sum.md`
+- `Transpose of Matrix.cpp` → `Transpose of Matrix.md`
+- `Triplet Sum in Array.cpp` → `Triplet Sum in Array.md`
+- `Wave Array.cpp` → `Wave Array.md`
+- `Common in all three arrays,cpp` → `Common in all three arrays.md`
+
+## Verification
+
+Each converted C++ source was checked to ensure its full decoded source text appears unchanged inside the corresponding Markdown `cpp` code block. This confirms source preservation, not compilation or algorithm correctness.
+
+Existing Markdown files were copied byte-for-byte. Original standalone C++ files are not included in this converted output; retain the original ZIP/branch until you have reviewed and uploaded the converted files.
