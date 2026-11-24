@@ -1,6 +1,5 @@
-# Binary Search Tree — C++ DSA Notes
+# Binary Search Tree — DSA
 
-Markdown-only BST problem collection. C++ implementations are embedded in fenced `cpp` blocks.
 
 ## Problem index
 
@@ -30,33 +29,3 @@ Markdown-only BST problem collection. C++ implementations are embedded in fenced
 - [Search in a Binary Search Tree.md](Search%20in%20a%20Binary%20Search%20Tree.md)
 - [Two Sum IV.md](Two%20Sum%20IV.md)
 - [Validate Binary Search Tree.md](Validate%20Binary%20Search%20Tree.md)
-
-## Migration report
-
-- Existing Markdown files preserved byte-for-byte: **11**
-- Standalone C++ files converted: **15**
-- Standalone `.cpp` files remaining: **0**
-
-## Converted sources
-
-- `Ceil in BST.cpp` → `Ceil in BST.md`
-- `Check if Bt is bst.cpp` → `Check if Bt is bst.md`
-- `Construct Bst from Array.cpp` → `Construct Bst from Array.md`
-- `Delete the node with value 'K'.cpp` → `Delete the node with value 'K'.md`
-- `Find Largest Bst.cpp` → `Find Largest Bst.md`
-- `Find max.cpp` → `Find max.md`
-- `Find min.cpp` → `Find min.md`
-- `Fix two nodes of Bst.cpp` → `Fix two nodes of Bst.md`
-- `Floor in BST.cpp` → `Floor in BST.md`
-- `In-order successor and predecessor.cpp` → `In-order successor and predecessor.md`
-- `Kth largest & smallest element.cpp` → `Kth largest & smallest element.md`
-- `Merge 2 Bst.cpp` → `Merge 2 Bst.md`
-- `Pair with given target.cpp` → `Pair with given target.md`
-- `Populate next right pointers.cpp` → `Populate next right pointers.md`
-- `Predecessor & Successor of given node in BST.cpp` → `Predecessor & Successor of given node in BST.md`
-
-## Verification
-
-Each converted source was checked for exact source-text preservation inside its Markdown C++ code block. This does not verify compilation or algorithm correctness.
-
-Keep the original branch/archive until this converted copy is reviewed and uploaded.
