@@ -1,6 +1,5 @@
-# Arrays — C++ DSA Notes
+# Arrays — DSA
 
-A Markdown-only collection of array and matrix problems. C++ implementations are stored inside fenced `cpp` blocks.
 
 ## Problem index
 
@@ -151,51 +150,3 @@ A Markdown-only collection of array and matrix problems. C++ implementations are
 - [split array largest sum.md](split%20array%20largest%20sum.md)
 - [umber of Subarrays with Bounded Maximum.md](umber%20of%20Subarrays%20with%20Bounded%20Maximum.md)
 
-## Migration report
-
-- Existing Markdown files preserved byte-for-byte: **113**
-- Standalone C++ source files converted: **33**
-- Standalone `.cpp` files remaining in this output: **0**
-- Unclassified files requiring review: **0**
-
-### Converted sources
-
-- `Alternate +ve,-ve nums.cpp` → `Alternate +ve,-ve nums.md`
-- `Chocolate Distribution.cpp` → `Chocolate Distribution.md`
-- `Coin Change.cpp` → `Coin Change.md`
-- `Cyclically rotate an array.cpp` → `Cyclically rotate an array.md`
-- `Factorial of large numbers.cpp` → `Factorial of large numbers.md`
-- `Find Modular exponentiation(x^n).cpp` → `Find Modular exponentiation(x^n).md`
-- `Find duplicates in an array.cpp` → `Find duplicates in an array.md`
-- `Find minimum and maximum element in an array.cpp` → `Find minimum and maximum element in an array.md`
-- `First Repeating Element.cpp` → `First Repeating Element.md`
-- `First non-repeating element.cpp` → `First non-repeating element.md`
-- `Implement two stacks in an array.cpp` → `Implement two stacks in an array.md`
-- `Indexes of a subarray with given sum.cpp` → `Indexes of a subarray with given sum.md`
-- `Longest alternating subsequence.cpp` → `Longest alternating subsequence.md`
-- `Max sum path in two arrays.cpp` → `Max sum path in two arrays.md`
-- `Maximum Index.cpp` → `Maximum Index.md`
-- `Maximum area between two vertical lines.cpp` → `Maximum area between two vertical lines.md`
-- `Maximum sum of i*arr[i].cpp` → `Maximum sum of i*arr[i].md`
-- `Minimize Max Distance to Gas Station.cpp` → `Minimize Max Distance to Gas Station.md`
-- `Minimize the Heights II.cpp` → `Minimize the Heights II.md`
-- `Move all negative elements to end.cpp` → `Move all negative elements to end.md`
-- `Next Greater Element.cpp` → `Next Greater Element.md`
-- `Rotate matrix clockwise.cpp` → `Rotate matrix clockwise.md`
-- `Rotate matrix.cpp` → `Rotate matrix.md`
-- `Second smallest.cpp` → `Second smallest.md`
-- `Smallest +ve Integer cannot represented as Sum.cpp` → `Smallest +ve Integer cannot represented as Sum.md`
-- `Smallest Positive missing number.cpp` → `Smallest Positive missing number.md`
-- `Stock span.cpp` → `Stock span.md`
-- `Subarray with 0 sum.cpp` → `Subarray with 0 sum.md`
-- `Subarray with given sum.cpp` → `Subarray with given sum.md`
-- `Transpose of Matrix.cpp` → `Transpose of Matrix.md`
-- `Triplet Sum in Array.cpp` → `Triplet Sum in Array.md`
-- `Wave Array.cpp` → `Wave Array.md`
-- `Common in all three arrays,cpp` → `Common in all three arrays.md`
-
-## Verification
-
-Each converted C++ source was checked to ensure its full decoded source text appears unchanged inside the corresponding Markdown `cpp` code block. This confirms source preservation, not compilation or algorithm correctness.
-
-Existing Markdown files were copied byte-for-byte. Original standalone C++ files are not included in this converted output; retain the original ZIP/branch until you have reviewed and uploaded the converted files.
