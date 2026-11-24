@@ -1,0 +1,119 @@
+{
+  "archive": "Dsa-Sliding-Window-Deque.zip",
+  "branch": "Sliding Window & Deque",
+  "summary": {
+    "existing_markdown_preserved": 9,
+    "cpp_converted": 6,
+    "total_problem_markdown_files": 15,
+    "standalone_cpp_remaining": 0
+  },
+  "preservation": [
+    {
+      "file": "Binary Subarrays With Sum.md",
+      "sha256": "efb9344068a9b6b81a83c4b841331110290b620c959e70586997629ff76d2d1a",
+      "verified_byte_for_byte": true
+    },
+    {
+      "file": "Count Number of Nice Subarrays.md",
+      "sha256": "228e57b99245c8fb4140700272c3abc18a3fe21216f9cd8d7ccc63163b3a99ae",
+      "verified_byte_for_byte": true
+    },
+    {
+      "file": "Longest Repeating Character Replacement.md",
+      "sha256": "a45c5c1e8b8df000b52cb711ec385eb6fe11246dc9465c2dfb42cbaf538a70d4",
+      "verified_byte_for_byte": true
+    },
+    {
+      "file": "Longest Substring Without Repeating Characters.md",
+      "sha256": "83581cf9fa89f43462d9f78ced28dd58835a2d57b8124873a4a0cf46186b34a8",
+      "verified_byte_for_byte": true
+    },
+    {
+      "file": "Max Consecutive Ones III.md",
+      "sha256": "afe50d691b702ca2bfadce00554bb5c76b5907ee4a7bb77ed7fd75ec9997dc79",
+      "verified_byte_for_byte": true
+    },
+    {
+      "file": "Maximum Points You Can Obtain from Cards.md",
+      "sha256": "5c9276b1843310e5bed9e3f39ffe9792d049725a9ea6676ea4b00b425fb76aaf",
+      "verified_byte_for_byte": true
+    },
+    {
+      "file": "Minimum Window Substring.md",
+      "sha256": "ed25c8da7641fd232e314459a6c90b3d6d6cd2d0eb68922e85593d30f3744bca",
+      "verified_byte_for_byte": true
+    },
+    {
+      "file": "Number of Substrings Containing All Three Characters.md",
+      "sha256": "9d1064794f9373ea0d4bdb38875fab4300b0b514fce49805dc750d1b0cf6cbf3",
+      "verified_byte_for_byte": true
+    },
+    {
+      "file": "Subarrays with K Different Integers.md",
+      "sha256": "77d9e2b25ab3bf79801942e569119d5787e11dac29e21fff9d53f6344178ced5",
+      "verified_byte_for_byte": true
+    }
+  ],
+  "conversions": [
+    {
+      "source_cpp": "Count Distinct Element in Every K Size Window.cpp",
+      "output_markdown": "Count Distinct Element in Every K Size Window.md",
+      "source_sha256": "b403eb7ab57bc9228c8ca8be01ca2971226dc2b0f3750e216b6ecfc3bea5584e",
+      "code_block_sha256": "b403eb7ab57bc9228c8ca8be01ca2971226dc2b0f3750e216b6ecfc3bea5584e",
+      "code_verified_byte_for_byte": true,
+      "problem_description": "inferred and labeled",
+      "complexity": "copied from source comments when present; otherwise marked not specified"
+    },
+    {
+      "source_cpp": "Implement Deque.cpp",
+      "output_markdown": "Implement Deque.md",
+      "source_sha256": "18e793fd3fb5cf13a71aade7d7a173f0c5ce5a2965b1a4f1a15f034cc5555a98",
+      "code_block_sha256": "18e793fd3fb5cf13a71aade7d7a173f0c5ce5a2965b1a4f1a15f034cc5555a98",
+      "code_verified_byte_for_byte": true,
+      "problem_description": "inferred and labeled",
+      "complexity": "copied from source comments when present; otherwise marked not specified"
+    },
+    {
+      "source_cpp": "Maximum in Subarrays of length K.cpp",
+      "output_markdown": "Maximum in Subarrays of length K.md",
+      "source_sha256": "decf1237859c970904e6fd742d1d67365e06332dd1a9245f981bf56d643b33dd",
+      "code_block_sha256": "decf1237859c970904e6fd742d1d67365e06332dd1a9245f981bf56d643b33dd",
+      "code_verified_byte_for_byte": true,
+      "problem_description": "inferred and labeled",
+      "complexity": "copied from source comments when present; otherwise marked not specified"
+    },
+    {
+      "source_cpp": "Search for Anagram Substring.cpp",
+      "output_markdown": "Search for Anagram Substring.md",
+      "source_sha256": "9f57dbb18bbca69fafd5894bab20189ca424dee741ba0c7669eff72e77423cdd",
+      "code_block_sha256": "9f57dbb18bbca69fafd5894bab20189ca424dee741ba0c7669eff72e77423cdd",
+      "code_verified_byte_for_byte": true,
+      "problem_description": "inferred and labeled",
+      "complexity": "copied from source comments when present; otherwise marked not specified"
+    },
+    {
+      "source_cpp": "Sliding Maximum.cpp",
+      "output_markdown": "Sliding Maximum.md",
+      "source_sha256": "4fd8037484b4bedd93130410df38e29eb72d589ab92abcba454a9aa22323cba3",
+      "code_block_sha256": "4fd8037484b4bedd93130410df38e29eb72d589ab92abcba454a9aa22323cba3",
+      "code_verified_byte_for_byte": true,
+      "problem_description": "inferred and labeled",
+      "complexity": "copied from source comments when present; otherwise marked not specified"
+    },
+    {
+      "source_cpp": "Smallest Subarray With K Distinct Elements.cpp",
+      "output_markdown": "Smallest Subarray With K Distinct Elements.md",
+      "source_sha256": "a16af2c50e1a8c0f8880ea75862729bb104effabf763d787e3b5709eaf511d85",
+      "code_block_sha256": "a16af2c50e1a8c0f8880ea75862729bb104effabf763d787e3b5709eaf511d85",
+      "code_verified_byte_for_byte": true,
+      "problem_description": "inferred and labeled",
+      "complexity": "copied from source comments when present; otherwise marked not specified"
+    }
+  ],
+  "checks": {
+    "zip_integrity": "passed",
+    "original_markdown_hashes": "all matched",
+    "cpp_code_blocks": "all 6 matched source bytes",
+    "problem_markdown_count": 15
+  }
+}
