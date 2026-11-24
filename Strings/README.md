@@ -1,0 +1,74 @@
+# Strings — C++ DSA Notes
+
+This branch snapshot has been converted to a Markdown-only problem library.
+Every C++ implementation is stored inside a fenced `cpp` code block in its problem Markdown file.
+
+## Contents
+
+- [Add Binary.md](Add%20Binary.md)
+- [Beautiful String.md](Beautiful%20String.md)
+- [Compare Version Numbers.md](Compare%20Version%20Numbers.md)
+- [Count and Say.md](Count%20and%20Say.md)
+- [Count substrings with exactly k distinct characters.md](Count%20substrings%20with%20exactly%20k%20distinct%20characters.md)
+- [Encode the Message.md](Encode%20the%20Message.md)
+- [Find All Anagrams in a String.md](Find%20All%20Anagrams%20in%20a%20String.md)
+- [Find K’th Character of Decrypted String.md](Find%20K’th%20Character%20of%20Decrypted%20String.md)
+- [Find the Index of the First Occurrence in a String.md](Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String.md)
+- [First non repeating character.md](First%20non%20repeating%20character.md)
+- [First unique character.md](First%20unique%20character.md)
+- [Given a string, find the next smallest palindrome.md](Given%20a%20string,%20find%20the%20next%20smallest%20palindrome.md)
+- [Group Anagrams.md](Group%20Anagrams.md)
+- [Is SubSequence.md](Is%20SubSequence.md)
+- [Isomorphic Strings or not.md](Isomorphic%20Strings%20or%20not.md)
+- [KMP algorithm.md](KMP%20algorithm.md)
+- [Largest odd number in string.md](Largest%20odd%20number%20in%20string.md)
+- [Longest Common Prefix.md](Longest%20Common%20Prefix.md)
+- [Longest Happy Prefix.md](Longest%20Happy%20Prefix.md)
+- [Longest Palindrome.md](Longest%20Palindrome.md)
+- [Longest Palindromic Substring.md](Longest%20Palindromic%20Substring.md)
+- [Longest Substring Without Repeating Characters.md](Longest%20Substring%20Without%20Repeating%20Characters.md)
+- [Maximum Nesting Depth of the Parentheses.md](Maximum%20Nesting%20Depth%20of%20the%20Parentheses.md)
+- [Minimum Parentheses.md](Minimum%20Parentheses.md)
+- [Minimum Window Substring.md](Minimum%20Window%20Substring.md)
+- [Rabin karp.md](Rabin%20karp.md)
+- [Ransom Note.md](Ransom%20Note.md)
+- [Remove Outermost Parentheses.md](Remove%20Outermost%20Parentheses.md)
+- [Repeated String Match.md](Repeated%20String%20Match.md)
+- [Reverse String Word Wise.md](Reverse%20String%20Word%20Wise.md)
+- [Roman to Integer & vice-versa.md](Roman%20to%20Integer%20&%20vice-versa.md)
+- [Shortest Palindrome.md](Shortest%20Palindrome.md)
+- [Sort Characters By Frequency.md](Sort%20Characters%20By%20Frequency.md)
+- [String to Integer (atoi).md](String%20to%20Integer%20(atoi).md)
+- [Sum of beauty of all substring.md](Sum%20of%20beauty%20of%20all%20substring.md)
+- [Time Based Key-Value Store.md](Time%20Based%20Key-Value%20Store.md)
+- [Valid Anagram.md](Valid%20Anagram.md)
+- [Valid Palindrome.md](Valid%20Palindrome.md)
+- [Z algorithm.md](Z%20algorithm.md)
+- [check if one string is rotation of another.md](check%20if%20one%20string%20is%20rotation%20of%20another.md)
+
+## Migration report
+
+- Original Markdown files preserved byte-for-byte: **33**
+- Standalone C++ files converted to Markdown: **7**
+- Standalone `.cpp` files remaining in this output: **0**
+
+### Converted files
+
+- `Count substrings with exactly k distinct characters.cpp` → `Count substrings with exactly k distinct characters.md`
+- `Find K’th Character of Decrypted String.cpp` → `Find K’th Character of Decrypted String.md`
+- `KMP algorithm.cpp` → `KMP algorithm.md`
+- `Maximum Nesting Depth of the Parentheses.cpp` → `Maximum Nesting Depth of the Parentheses.md`
+- `Rabin karp.cpp` → `Rabin karp.md`
+- `Sort Characters By Frequency.cpp` → `Sort Characters By Frequency.md`
+- `Z algorithm.cpp` → `Z algorithm.md`
+
+## Important verification note
+
+The original C++ source text was verified to be present verbatim in each generated Markdown code block.
+This is a source-preservation check, not a compilation or algorithm-correctness test. Some files rely on judge-provided headers, types, or function signatures.
+
+## Suggested next improvements
+
+- Add intuition, dry runs, and test cases to each converted problem.
+- Group problems by pattern after reviewing their actual algorithms.
+- Keep one canonical Markdown file per problem and resolve any duplicate concepts deliberately.
