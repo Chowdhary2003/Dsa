@@ -1,7 +1,5 @@
-# Strings — C++ DSA Notes
+# Strings — DSA
 
-This branch snapshot has been converted to a Markdown-only problem library.
-Every C++ implementation is stored inside a fenced `cpp` code block in its problem Markdown file.
 
 ## Contents
 
@@ -46,29 +44,3 @@ Every C++ implementation is stored inside a fenced `cpp` code block in its probl
 - [Z algorithm.md](Z%20algorithm.md)
 - [check if one string is rotation of another.md](check%20if%20one%20string%20is%20rotation%20of%20another.md)
 
-## Migration report
-
-- Original Markdown files preserved byte-for-byte: **33**
-- Standalone C++ files converted to Markdown: **7**
-- Standalone `.cpp` files remaining in this output: **0**
-
-### Converted files
-
-- `Count substrings with exactly k distinct characters.cpp` → `Count substrings with exactly k distinct characters.md`
-- `Find K’th Character of Decrypted String.cpp` → `Find K’th Character of Decrypted String.md`
-- `KMP algorithm.cpp` → `KMP algorithm.md`
-- `Maximum Nesting Depth of the Parentheses.cpp` → `Maximum Nesting Depth of the Parentheses.md`
-- `Rabin karp.cpp` → `Rabin karp.md`
-- `Sort Characters By Frequency.cpp` → `Sort Characters By Frequency.md`
-- `Z algorithm.cpp` → `Z algorithm.md`
-
-## Important verification note
-
-The original C++ source text was verified to be present verbatim in each generated Markdown code block.
-This is a source-preservation check, not a compilation or algorithm-correctness test. Some files rely on judge-provided headers, types, or function signatures.
-
-## Suggested next improvements
-
-- Add intuition, dry runs, and test cases to each converted problem.
-- Group problems by pattern after reviewing their actual algorithms.
-- Keep one canonical Markdown file per problem and resolve any duplicate concepts deliberately.
