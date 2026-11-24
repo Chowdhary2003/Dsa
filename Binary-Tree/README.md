@@ -1,0 +1,65 @@
+# Binary Tree — C++ DSA Notes
+
+A Markdown-only collection of binary tree problems. C++ implementations are stored inside fenced `cpp` blocks.
+
+## Problem index
+
+- [All Nodes Distance K in Binary Tree.md](All%20Nodes%20Distance%20K%20in%20Binary%20Tree.md)
+- [Balanced Binary Tree.md](Balanced%20Binary%20Tree.md)
+- [Binary Tree Cameras.md](Binary%20Tree%20Cameras.md)
+- [Binary Tree Inorder Traversal.md](Binary%20Tree%20Inorder%20Traversal.md)
+- [Binary Tree Level Order Traversal.md](Binary%20Tree%20Level%20Order%20Traversal.md)
+- [Binary Tree Maximum Path Sum.md](Binary%20Tree%20Maximum%20Path%20Sum.md)
+- [Binary Tree Postorder Traversal.md](Binary%20Tree%20Postorder%20Traversal.md)
+- [Binary Tree Preorder Traversal.md](Binary%20Tree%20Preorder%20Traversal.md)
+- [Binary Tree Right Side View.md](Binary%20Tree%20Right%20Side%20View.md)
+- [Binary Tree to CDLL.md](Binary%20Tree%20to%20CDLL.md)
+- [Bottom View of Binary Tree.md](Bottom%20View%20of%20Binary%20Tree.md)
+- [Children sum property.md](Children%20sum%20property.md)
+- [Construct Binary Tree from Inorder and Postorder Traversal.md](Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder%20Traversal.md)
+- [Construct Binary Tree from Preorder and Inorder Traversal.md](Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal.md)
+- [Construct binary tree.md](Construct%20binary%20tree.md)
+- [Count Complete Tree Nodes.md](Count%20Complete%20Tree%20Nodes.md)
+- [Diagonal Tree Traversal.md](Diagonal%20Tree%20Traversal.md)
+- [Diameter of Binary Tree.md](Diameter%20of%20Binary%20Tree.md)
+- [Flatten Binary Tree to Linked List.md](Flatten%20Binary%20Tree%20to%20Linked%20List.md)
+- [Height.md](Height.md)
+- [Invert Binary Tree.md](Invert%20Binary%20Tree.md)
+- [LCA of 3 nodes.md](LCA%20of%203%20nodes.md)
+- [Left View of Binary Tree.md](Left%20View%20of%20Binary%20Tree.md)
+- [Lowest Common Ancestor of a Binary Tree.md](Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.md)
+- [Maximum Depth of Binary Tree.md](Maximum%20Depth%20of%20Binary%20Tree.md)
+- [Maximum Width of Binary Tree.md](Maximum%20Width%20of%20Binary%20Tree.md)
+- [Mirror.md](Mirror.md)
+- [Morris Inorder traversal.md](Morris%20Inorder%20traversal.md)
+- [Morris preorder traversal.md](Morris%20preorder%20traversal.md)
+- [Populating Next Right Pointers in Each Node.md](Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md)
+- [Pre, Post, Inorder in one traversal.md](Pre,%20Post,%20Inorder%20in%20one%20traversal.md)
+- [Print root to node path in BT.md](Print%20root%20to%20node%20path%20in%20BT.md)
+- [Same Tree.md](Same%20Tree.md)
+- [Serialize and Deserialize Binary Tree.md](Serialize%20and%20Deserialize%20Binary%20Tree.md)
+- [Symmetric Tree.md](Symmetric%20Tree.md)
+- [Top View of Binary Tree.md](Top%20View%20of%20Binary%20Tree.md)
+- [Tree Boundary Traversal.md](Tree%20Boundary%20Traversal.md)
+- [Vertical Order Traversal of a Binary Tree.md](Vertical%20Order%20Traversal%20of%20a%20Binary%20Tree.md)
+- [Zigzag Traversal.md](Zigzag%20Traversal.md)
+
+## Migration report
+
+- Existing Markdown files preserved byte-for-byte: **34**
+- Standalone C++ files converted: **5**
+- Standalone `.cpp` files remaining in this output: **0**
+
+### Converted sources
+
+- `Children sum property.cpp` → `Children sum property.md`
+- `Construct binary tree .cpp` → `Construct binary tree.md`
+- `Height.cpp` → `Height.md`
+- `LCA of 3 nodes.cpp` → `LCA of 3 nodes.md`
+- `Mirror.cpp` → `Mirror.md`
+
+## Verification
+
+Each converted source was checked to ensure its complete decoded C++ text appears unchanged inside the corresponding Markdown code block. This verifies source preservation, not compilation or algorithm correctness.
+
+Existing Markdown files were copied byte-for-byte. Keep the original branch/archive until the converted copy has been reviewed and uploaded.
