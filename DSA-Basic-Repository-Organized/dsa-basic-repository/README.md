@@ -1,12 +1,4 @@
-# DSA Basic
-
-> A collection of 34 beginner-friendly Data Structures and Algorithms practice notes with C++ solutions.
-
-## Repository overview
-
-This repository groups the existing notes by topic so they are easier to browse, revise, and extend. The original problem-note files have been moved into topic folders; their contents have not been rewritten.
-
-## Topics
+# DSA Basic Topics
 
 ### Number & Mathematics
 
@@ -54,20 +46,7 @@ This repository groups the existing notes by topic so they are easier to browse,
 - [Print a name N times](./04-recursion/Print%20a%20name%20N%20times.md)
 - [Print N to 1 without loop](./04-recursion/Print%20N%20to%201%20without%20loop.md)
 
-## Suggested workflow
 
-1. Pick a topic folder.
-2. Read the problem statement and attempt the solution before viewing the code.
-3. Trace the solution with a small example.
-4. Test boundary cases and record anything you want to revisit.
-
-## Contributing
-
-- Keep each problem in its own Markdown file.
-- Use descriptive problem names.
-- Place new notes in the most relevant topic folder.
-- Add every new note to the topic list in this README.
-- Keep examples, explanations, and code fenced with the appropriate language identifier.
 
 ## Repository structure
 
@@ -80,6 +59,4 @@ DSA-Basic/
 └── README.md
 ```
 
----
 
-Happy learning!
